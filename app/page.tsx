@@ -25,11 +25,11 @@ export default function Home() {
               <Heart className="mr-2" size={20} />
               Dona Ahora
             </Link>
-            <Link href="/aliados" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+            <Link href="/personalizacion" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
               <Users className="mr-2" size={20} />
               Conviértete en Aliado
             </Link>
-            <Link href="/solicitar" className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+            <Link href="/personalizacion" className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
               <Wheelchair className="mr-2" size={20} />
               Solicita una Prótesis
             </Link>
