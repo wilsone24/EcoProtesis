@@ -35,7 +35,13 @@ export default function AcercaDeNosotros() {
   )
 }
 
-function Card({ icon, title, content }) {
+interface CardProps {
+  icon: React.ReactNode; // Para aceptar cualquier elemento React (íconos, JSX)
+  title: string; // Título como texto
+  content: string; // Contenido como texto
+}
+
+function Card({ icon, title, content }: CardProps) {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
       <div className="flex items-center mb-4">
@@ -44,10 +50,10 @@ function Card({ icon, title, content }) {
       </div>
       <p className="text-gray-600">{content}</p>
     </div>
-  )
+  );
 }
 
-function ValueCard({ icon, title, content }) {
+function ValueCard({ icon, title, content }: CardProps) {
   return (
     <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
       <div className="text-green-600 mb-4">
@@ -56,6 +62,6 @@ function ValueCard({ icon, title, content }) {
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-600">{content}</p>
     </div>
-  )
+  );
 }
 

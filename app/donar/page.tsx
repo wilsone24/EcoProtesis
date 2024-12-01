@@ -34,7 +34,14 @@ export default function ComoDonar() {
   )
 }
 
-function DonationOption({ icon, title, content, children }) {
+interface DonationOptionProps {
+  icon: React.ReactNode; // Cualquier elemento React, como un ícono o JSX
+  title: string; // Título como texto
+  content: string; // Contenido como texto
+  children?: React.ReactNode; // Opcional, puede incluir cualquier nodo React
+}
+
+function DonationOption({ icon, title, content, children }: DonationOptionProps) {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
       <div className="flex items-center mb-4">
@@ -44,6 +51,5 @@ function DonationOption({ icon, title, content, children }) {
       <p className="text-gray-600 mb-4">{content}</p>
       {children}
     </div>
-  )
+  );
 }
-
